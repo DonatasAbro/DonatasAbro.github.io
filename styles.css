@@ -51,6 +51,29 @@ img {
   max-width: 100%;
   height: auto;
 }
+#faded-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20pt;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000c5;
+
+  button {
+    background-color: #0000ff;
+    border: 2px solid #ffff00;
+    color: #00ff00;
+    border-radius: 35pt;
+    padding: 10pt;
+    font-size: 15pt;
+    cursor: pointer;
+    user-select: none;
+  }
+}
 @media screen and (max-width: 600px) {
   body {
     font-size: 12pt;

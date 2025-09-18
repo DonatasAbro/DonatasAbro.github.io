@@ -7,9 +7,9 @@
     <link rel="icon" type="image/png" href="img/Donatas.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body style="overflow: hidden">
     <img src="img/white.png" alt="" style="opacity: 0" />
-    <div id="body-content">
+    <div id="body-content" style="filter: blur(40px); pointer-events: none">
       <table border="1" cellspacing="0" cellpadding="10">
         <tr>
           <td colspan="2">
@@ -124,5 +124,11 @@
         the Pooh 劉曉波动态网自由门
       </p>
     </div>
+    <div id="faded-overlay">
+      <button onclick="playAudio()">🎷Play Casiopea!🔊</button
+      ><button onclick="removeOverlay()">😶No music!🔇</button>
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
