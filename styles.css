@@ -3,11 +3,14 @@ body {
   color: #00ff00;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 14pt;
+  margin: 0;
+  padding: 0;
+}
+#body-content {
   text-align: center;
   background-image: url("img/bonk.gif");
   background-repeat: repeat;
   background-size: 15%;
-  margin: 0;
   padding: 10px;
 }
 table {
@@ -47,6 +50,27 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+#faded-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20pt;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000c5;
+
+  button {
+    border: 1pt solid #000000;
+    border-radius: 35pt;
+    padding: 10pt;
+    font-size: 15pt;
+    cursor: pointer;
+    user-select: none;
+  }
 }
 @media screen and (max-width: 600px) {
   body {
