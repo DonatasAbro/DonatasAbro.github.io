@@ -1,0 +1,87 @@
+body {
+  background-color: #000000;
+  color: #00ff00;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14pt;
+  text-align: center;
+  background-image: url("img/bonk.gif");
+  background-repeat: repeat;
+  background-size: 15%;
+  margin: 0;
+  padding: 10px;
+}
+table {
+  border: 2px solid #ffff00;
+  background-color: #000080;
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+}
+td {
+  padding: 10px;
+}
+a {
+  color: #ff00ff;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ffff00;
+  text-decoration: blink;
+}
+.marquee {
+  color: #ff0000;
+  font-size: 18pt;
+  font-weight: bold;
+}
+.blink {
+  text-decoration: blink;
+}
+.counter {
+  font-size: 10pt;
+  color: #ffffff;
+}
+.nav-container {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12pt;
+  }
+  .marquee {
+    font-size: 14pt;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .nav-container {
+    text-align: center;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    margin: 10px 0;
+  }
+  h1 img {
+    width: 150px;
+    height: auto;
+  }
+  form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .counter {
+    margin-top: 10px;
+  }
+}
