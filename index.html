@@ -4,6 +4,7 @@
     <title>Donatas Abromavičius Front-End Portfolio - Welcome!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/Donatas.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body style="overflow: hidden">
@@ -18,9 +19,18 @@
             >
             <audio
               id="audio_1"
-              src="http://hyades.shoutca.st:8551/;"
-              style="visibility: hidden; height: 0"
-            />
+              controls="false"
+              preload="none"
+              style="
+                visibility: hidden;
+                height: 0;
+                pointer-events: none;
+                user-select: none;
+              "
+            >
+              <source src="http://hyades.shoutca.st:8551/;" />
+              Your browser does not support the audio element.
+            </audio>
           </td>
         </tr>
         <tr>
@@ -55,7 +65,7 @@
             <h2>About Me</h2>
             <p>
               I'm Donatas Abromavičius
-              <img src="img/Donatas.webp" style="height: 14pt" />, a front-end
+              <img src="img/Donatas.png" style="height: 14pt" />, a front-end
               developer with over 3 years of experience. More info below
             </p>
             <img src="img/moz_sticks.gif" style="height: 150pt;" / >
@@ -87,7 +97,7 @@
               direction="right"
               style="color: #00ffff"
               ><img src="img/desra_left.webp" style="height: 20pt" /><img
-                src="img/Donatas.webp"
+                src="img/Donatas.png"
                 style="height: 20pt" /><img
                 src="img/desra_right.webp"
                 style="height: 20pt"
