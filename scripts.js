@@ -14,3 +14,10 @@ function playAudio() {
   casiopea_audio.play();
   removeOverlay();
 }
+
+function setCurrentYear() {
+  const currentYear = document.getElementsByClassName("current-year")[0];
+  currentYear.innerHTML = new Date().getFullYear();
+}
+
+setCurrentYear();

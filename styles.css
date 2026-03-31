@@ -52,7 +52,7 @@ img {
   height: auto;
 }
 #faded-overlay {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
