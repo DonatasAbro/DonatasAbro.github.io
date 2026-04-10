@@ -51,6 +51,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+ul#links-list {
+  text-align: left;
+}
 #faded-overlay {
   position: fixed;
   display: flex;

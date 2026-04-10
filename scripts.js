@@ -15,8 +15,8 @@ function playAudio() {
   removeOverlay();
 }
 
-function getFullYearsSinceVilnius2022() {
-  const target = new Date("2022-10-10T08:00:00+03:00");
+function getFullYearsSince(targetYear) {
+  const target = new Date(targetYear);
   const now = new Date();
 
   let years = now.getFullYear() - target.getFullYear();
@@ -35,7 +35,12 @@ function setYearsOfExperience() {
   const yearsOfExperience = document.getElementsByClassName(
     "years-of-experience",
   )[0];
-  yearsOfExperience.innerHTML = getFullYearsSinceVilnius2022();
+  yearsOfExperience.innerHTML = getFullYearsSince("2022-10-10T08:00:00+03:00");
+}
+
+function setYearsOld() {
+  const yearsOld = document.getElementsByClassName("years-old")[0];
+  yearsOld.innerHTML = getFullYearsSince("1997-04-11T00:00:00+03:00");
 }
 
 function setCurrentYear() {
@@ -45,6 +50,7 @@ function setCurrentYear() {
 
 // Run functions on load
 (() => {
+  setYearsOld();
   setYearsOfExperience();
   setCurrentYear();
 })();
